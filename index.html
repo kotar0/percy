@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h2>Upload CSV</h2>
+<input type="file" id="files" name="files[]" multiple />
+
+<h2>CSV Keys</h2>
+<ul class="keylist"></ul>
+
+<h2>Template</h2>
+<textarea name="templtextarea" id="templtextarea" cols="30" rows="10"></textarea>
+<button class="btn__parse">parse</button>
+
+<h2>Result</h2>
+<div id="result">
+
+</div>
+
+
+<script type="text/template" id="tpl_user">
+        <div>sex: {{sex}}</div>
+        <div>weight: {{weight}}</div>
+</script>
+
+<script src="./node_modules/papaparse/papaparse.min.js"></script>
+<script src="./node_modules/lodash/lodash.min.js"></script>
+<script src="./node_modules/hashids/dist/hashids.min.js"></script>
+<script src="./node_modules/obtain-unicode/obtain-unicode.js"></script>
+<script src="./node_modules/hogan.js/dist/hogan-3.0.2.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

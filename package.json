@@ -1,0 +1,19 @@
+{
+  "name": "csvparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hashids": "^1.1.4",
+    "hogan.js": "^3.0.2",
+    "lodash": "^4.17.4",
+    "obtain-unicode": "0.0.5",
+    "papaparse": "^4.3.6"
+  }
+}
